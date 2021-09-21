@@ -1,6 +1,5 @@
 .button {
   background-color: $brand-primary;
-  border: 1px solid $brand-primary;
   text-decoration: none;
   color: $white;
   padding: 10px 35px;
@@ -8,9 +7,10 @@
   display: inline-block;
   text-transform: uppercase;
   border-radius: 24px;
+  border: 1px solid $brand-primary;
   transition: color 0.2s linear, background-color 0.2s linear;
 
-  // .butto:hover
+  // .button:hover
   &:hover {
     color: $brand-primary;
     background-color: transparent;
@@ -28,8 +28,8 @@
     }
   }
 
-  // .botton.botton-large
-  &.botton-large {
+  // .button.button-large
+  &.button-large {
     padding: 18px 45px;
   }
 }

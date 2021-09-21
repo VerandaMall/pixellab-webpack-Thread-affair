@@ -1,0 +1,21 @@
+.home-catalog-preview {
+  // .home-catalog-preview > header
+  & > header {
+    text-align: center;
+    width: 320px;
+  }
+}
+
+// .content-main .home-catalog-preview:nth-child(1) header -> block
+.content-main &:nth-child(1) > header {
+  display: block !important;
+}
+
+// .content-main .home-catalog-preview:nth-child(2) .product-tile
+.content-main &:nth-child(2) .product-tile {
+  display: none;
+
+  &:first-child {
+    display: block;
+  }
+}
